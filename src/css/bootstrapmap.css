@@ -120,6 +120,325 @@
   margin: 8px 4px 5px 1px;
 }
 
+.override .LocateButton .zoomLocateButton {
+    background-image: url("../images/home_locate.png");
+    background-repeat: no-repeat;
+    background-position: -30px 0px;
+    background-color: white;
+    border-color: #cccccc;
+    border: 1px solid #cccccc;
+    width: 32px;
+    height: 32px;
+}
+
+.override .LocateButton:hover .zoomLocateButton:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+.override .map .logo-med {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 31px;
+    height: 40px;
+    z-index: 30;
+    background-image: url("../images/CC_Logo.png");
+    cursor: pointer;
+    _background-image: none;
+}
+
+.override .dijitReset {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font: inherit;
+    line-height: normal;
+    color: inherit;
+}
+
+.override .dijitDialog {
+    border: 1px solid #759dc0;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
+.override .dijitDialogPaneContent {
+    background: #ffffff repeat-x top left;
+    border-top: 1px solid #759dc0;
+    padding: 10px 8px;
+    position: relative;
+}
+.override .dijitDialogPaneContentArea {
+
+    margin: -10px -8px;
+    padding: 10px 8px;
+}
+
+.override .dijitDialogTitleBar {
+
+    border: 1px solid #ffffff;
+    border-top: none;
+    background-color: #CCCCCC;
+    background-image: url("../images/standardGradient.png");
+    background-repeat: repeat-x;
+    background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: -o-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+    _background-image: none;
+    padding: 5px 7px 4px 7px;
+}
+.override .dijitDialogTitle {
+
+    padding: 0 1px;
+    font-size: 1.091em;
+    color: #000000;
+}
+.override .dijitDialogCloseIcon {
+
+    background: url("../images/dialogCloseIcon.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 5px;
+    height: 15px;
+    width: 21px;
+}
+.dj_ie6 .override .dijitDialogCloseIcon {
+    background-image: url("../images/dialogCloseIcon8bit.png");
+}
+.override .dijitDialogCloseIconHover {
+    background-position: -21px;
+}
+.override .dijitDialogCloseIcon:active {
+    background-position: -42px;
+}
+
+.override .dijitDialogPaneActionBar {
+
+    background-color: #efefef;
+    padding: 3px 5px 2px 7px;
+    text-align: right;
+    border-top: 1px solid #d3d3d3;
+    margin: 10px -8px -10px;
+}
+.override .dijitTooltipDialog .dijitDialogPaneActionBar {
+    -webkit-border-bottom-right-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    margin: 10px -10px -8px;
+}
+.override .dijitDialogPaneActionBar .dijitButton {
+    float: none;
+}
+.override .dijitButtonNode{
+    border: 0px solid #759dc0;
+
+}
+.override .dijitButton {
+
+    border: 1px solid #CCCCCC;
+    padding: 2px 4px 4px 4px;
+    color: #000000;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    background-image: url("form/images/buttonEnabled.png");
+    background-repeat: repeat-x;
+    _background-image: none;
+}
+
+.override  .dijitValidationTextBoxError .dijitValidationContainer {
+    background-color: #d46464;
+    background-image: url("../images/error.png");
+    background-position: top center;
+    border: solid #d46464 0;
+    width: 9px;
+}
+.override  .dijitValidationTextBoxError .dijitValidationContainer {
+    display: inline;
+    cursor: default;
+}
+.override .dijitValidationTextBox .dijitValidationContainer {
+    display: none;
+}
+.override .dijitTextBox .dijitSpinnerButtonContainer, .dijitTextBox .dijitArrowButtonContainer, .dijitValidationTextBox .dijitValidationContainer {
+    float: right;
+    text-align: center;
+}
+
+.override .dijitTextBox {
+    border: 1px solid #cccccc;
+
+}
+
+.override .dijitSelectErrorFocused, .override .dijitSelectErrorFocused .dijitButtonContents, .override .dijitTextBoxErrorFocused, .override .dijitTextBoxErrorFocused .dijitButtonNode {
+    border-color: #ce5050;
+}
+
+.override .dijitSelectError, .override .dijitSelectError .dijitButtonContents, .override .dijitTextBoxError, .override .dijitTextBoxError .dijitButtonNode {
+    border-color: #d46464;
+}
+
+.override .dijitSelect input, .dijitTextBox input {
+    float: left;
+}
+
+.override .dijitSelect,
+.override .dijitSelect .dijitButtonContents,.override .dijitTextBox,
+.override .dijitTextBox .dijitButtonNode {
+    border-color: #b5bcc7;
+    -webkit-transition-property: background-color, border;
+    -moz-transition-property: background-color, border;
+    transition-property: background-color, border;
+    -webkit-transition-duration: 0.35s;
+    -moz-transition-duration: 0.35s;
+    transition-duration: 0.35s;
+}
+.override .dijitSelect, .override .dijitTextBox {
+    background-color: #ffffff;
+}
+.override .dijitSelectHover,
+.override .dijitSelectHover .dijitButtonContents,.override .dijitTextBoxHover,
+.override .dijitTextBoxHover .dijitButtonNode {
+    border-color: #759dc0;
+    -webkit-transition-duration: 0.25s;
+    -moz-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+}
+
+.override .dijitTextBoxHover {
+    background-color: #e5f2fe;
+    background-image:     -moz-linear-gradient(rgba(127, 127, 127, 0.2) 0%, rgba(127, 127, 127, 0) 2px);
+    background-image: -webkit-linear-gradient(rgba(127, 127, 127, 0.2) 0%, rgba(127, 127, 127, 0) 2px);
+    background-image: -o-linear-gradient(rgba(127, 127, 127, 0.2) 0%, rgba(127, 127, 127, 0) 2px);
+    background-image: linear-gradient(rgba(127, 127, 127, 0.2) 0%, rgba(127, 127, 127, 0) 2px);
+}
+
+.override .dijitSelectError, .override .dijitSelectError .dijitButtonContents,.override .dijitTextBoxError,.override .dijitTextBoxError .dijitButtonNode {
+    border-color: #d46464;
+}
+
+.override .dijitSelectFocused,.override .dijitSelectFocused .dijitButtonContents,.override .dijitTextBoxFocused,.override .dijitTextBoxFocused .dijitButtonNode {
+    border-color: #759dc0;
+    -webkit-transition-duration: 0.1s;
+    -moz-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+}
+.override .dijitTextBoxFocused {
+    background-color: #ffffff;
+    background-image: -moz-linear-gradient(rgba(127, 127, 127, 0.2) 0%, rgba(127, 127, 127, 0) 2px);
+    background-image: -webkit-linear-gradient(rgba(127, 127, 127, 0.2) 0%, rgba(127, 127, 127, 0) 2px);
+    background-image: -o-linear-gradient(rgba(127, 127, 127, 0.2) 0%, rgba(127, 127, 127, 0) 2px);
+    background-image: linear-gradient(rgba(127, 127, 127, 0.2) 0%, rgba(127, 127, 127, 0) 2px);
+}
+
+.override .dijitTextBoxFocused .dijitInputContainer {
+    background: #ffffff;
+}
+.override .dijitTooltipDialog .dijitDialogPaneActionBar {
+    -webkit-border-bottom-right-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    margin: 10px;
+}
+
+.override .dijitTooltip, .override .dijitTooltipDialog {
+    background: transparent;
+}
+.override .dijitTooltipBelow
+{padding-top: 13px;
+    padding-left: 3px; padding-right: 3px;}
+.override .dijitTooltipAbove {padding-bottom: 13px; padding-left: 3px; padding-right: 3px;}
+.override .dijitTooltipContainer {background-color: #ffffff; background-image: -moz-linear-gradient(bottom, rgba(207, 229, 250, 0.1) 0px, #ffffff 10px); background-image: -webkit-linear-gradient(bottom, rgba(207, 229, 250, 0.1) 0px, #ffffff 10px); background-image: -o-linear-gradient(bottom, rgba(207, 229, 250, 0.1) 0px, #ffffff 10px); background-image: linear-gradient(bottom, rgba(207, 229, 250, 0.1) 0px, #ffffff 10px); background-position: bottom; border: 1px solid #759dc0; padding: 6px 8px; -moz-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25); -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25); font-size: 1em; color: #000000;}
+.override .dijitTooltipConnector {border: 0; z-index: 2; background-image: url("../images/tooltip.png"); background-repeat: no-repeat; width: 16px; height: 14px;}
+.dj_ie6 .override .dijitTooltipConnector {background-image: url("../images/tooltip8bit.png");}
+.override .dijitTooltipABRight .dijitTooltipConnector {left: auto !important; right: 3px;}
+.override .dijitTooltipBelow .dijitTooltipConnector {top: 0; left: 3px; background-position: -31px 0; width: 16px; height: 14px;}
+.override .dijitTooltipAbove .dijitTooltipConnector {bottom: 0; left: 3px; background-position: -15px 0; width: 16px; height: 14px;}
+.dj_ie7 .override .dijitTooltipAbove .dijitTooltipConnector, .dj_ie6 .override .dijitTooltipAbove .dijitTooltipConnector {bottom: -1px;}
+.override .dijitTooltipLeft {padding-right: 14px;}
+.override .dijitTooltipLeft .dijitTooltipConnector {right: 0; background-position: 0 0; width: 16px; height: 14px;}
+.override .dijitTooltipRight {padding-left: 14px;}
+.override .dijitTooltipRight .dijitTooltipConnector {left: 0; background-position: -48px 0; width: 16px; height: 14px;}
+
+.override .dijitInputInner {
+    border: 0 !important;
+    border-radius: 4px;
+    background-color: transparent !important;
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+
+.override .dijitTextBoxHover {
+    background-color: #e5f2fe;
+    background-image: -moz-linear-gradient(rgba(127, 127, 127, 0.2) 0%, rgba(127, 127, 127, 0) 2px);
+    background-image: -webkit-linear-gradient(rgba(127, 127, 127, 0.2) 0%, rgba(127, 127, 127, 0) 2px);
+    background-image: -o-linear-gradient(rgba(127, 127, 127, 0.2) 0%, rgba(127, 127, 127, 0) 2px);
+    background-image: linear-gradient(rgba(127, 127, 127, 0.2) 0%, rgba(127, 127, 127, 0) 2px);
+}
+
+.override .dijitTooltip {
+    position: absolute;
+    z-index: 2000;
+    display: block;
+
+    left: 50%;
+    top: -10000px;
+    overflow: visible;
+}
+.override .dijitTooltipContainer {
+    border: 1px solid #cccccc;
+    background: #fffcfc;
+    color: black;
+    font-size: small;
+}
+.override .dijitTooltipFocusNode {
+    padding: 2px 2px 2px 2px;
+}
+.override .dijitTooltipConnector {
+    position: absolute;
+}
+.override .dijit_a11y .dijitTooltipConnector {
+    display: none;
+}
+.override .dijitTooltipData {
+    display:none;
+}
+
+/*** Button Gradient ****/
+/*.override .dijitButton {
+
+    border: 1px solid #CCCCCC;
+    padding: 2px 4px 4px 4px;
+    color: #000000;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    background-image: url("form/images/buttonEnabled.png");
+    background-repeat: repeat-x;
+    background-image: -moz-linear-gradient(#ffffff 0px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0.75) 100%);
+    background-image: -webkit-linear-gradient(#ffffff 0px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0.75) 100%);
+    background-image: -o-linear-gradient(#ffffff 0px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0.75) 100%);
+    background-image: linear-gradient(#ffffff 0px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0.75) 100%);
+    _background-image: none;
+}*/
+
 /*** Fix Bootstrap modal bug ***/
 body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom {
   margin-right: 0;

@@ -1,7 +1,17 @@
 body {
   padding-top: 50px;
+
 }
 .starter-template {
   padding: 40px 15px;
   text-align: center;
 }
+#LocateButton {
+    position: absolute;
+    top: 135px;
+    left: 15px;
+    z-index: 50;
+}
+
+
+
