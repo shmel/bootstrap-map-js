@@ -32,28 +32,39 @@
 
 /*** Restyle Esri Popup ***/
 .esriPopupWrapper {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: normal;
-  line-height: 18px;
+  line-height: 15px;
   background-color: #f7f7f7;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333333;
 }
 
-.esriPopup .titlePane, .esriPopup .contentPane, .esriPopup .actionsPane  {
-  padding: 8px 14px;
-  border: none;
-  max-height: 70px;
-  background-color: #f7f7f7;
-}
 
-.esriPopup .titlePane, {
-  padding-top: 10px;
-  color: #333333;
+.esriPopup .contentPane, .esriPopup .actionsPane  {
+  padding: 8px 8px;
+  border: 1px solid #cccccc;
+  max-height: 150px;
+  background-color: #f7f7f7;
 }
 
 .esriPopup .title {
   color: #333333;
+}
+
+.esriPopup .titlePane {
+    background-color: #DBDBDB;
+    color: #FFFFFF;
+    line-height: 25px;
+    padding-left: 6px;
+    padding-bottom: 6px;
+    border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -o-border-radius: 5px 5px 0px 0px;
+    cursor: default;
+    border: 1px solid #CCCCCC;
+    border-bottom: none;
 }
 
 .esriPopup .titleButton {
@@ -76,8 +87,8 @@
 
 
 .esriPopup .actionsPane {
-  display: none;
-  margin-bottom: 15px;
+  display: block;
+  border: none;
 }
 
 .esriButton.close {

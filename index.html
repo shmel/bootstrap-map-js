@@ -14,7 +14,7 @@
     <link href="bootstrap_v3/dist/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="fullmap-template.css" rel="stylesheet">
+    <link href="src/css/fullmap-template.css" rel="stylesheet">
 
     <!-- Bootstrap-map-js -->
     <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.8/js/esri/css/esri.css">
@@ -62,20 +62,48 @@
               <li class="active dropdown" id="layerList">
                   <a href class="dropdown-toggle" data-toggle="dropdown">Layers <b class="caret"></b></a>
                   <ul class="dropdown-menu" id="myDropdown2">
-                      <li id="contours" value="4" title="off" class="list_item">
-                          <a href="#">Fiber Telecom</a>
-                      </li>
-                      <li class="divider"></li>
-                      <li id="geology" value="7" title="on" class="list_item">
+                      <li id="Water" value="" title="on" class="list_item">
                           <a href="#">Water</a>
                       </li>
                       <li class="divider"></li>
-                      <li id="Wastewater" value="8" title="off" class="list_item">
+                      <li id="Wastewater" value="" title="on" class="list_item">
                           <a href="#">Wastewater</a>
                       </li>
                       <li class="divider"></li>
-                      <li id="Property" value="8" title="off" class="list_item">
+                      <li id="Lateral Points" value="" title="on" class="list_item">
+                          <a href="#">Lateral Points</a>
+                      </li>
+                      <li class="divider"></li>
+                      <li id="Fiber Telecom" value="" title="off" class="list_item">
+                          <a href="#">Fiber Telecom</a>
+                      </li>
+                      <li class="divider"></li>
+                      <li id="Reclaimed" value="" title="on" class="list_item">
+                          <a href="#">Reclaimed</a>
+                      </li>
+                      <li class="divider"></li>
+                      <li id="La Plata Sewer" value="" title="off" class="list_item">
+                          <a href="#">La Plata Sewer</a>
+                      </li>
+                      <li class="divider"></li>
+                      <li id="La Plata Water" value="" title="off" class="list_item">
+                          <a href="#">La Plata Water</a>
+                      </li>
+                      <li class="divider"></li>
+                      <li id="Wastewater Collection Systems" value="off" title="off" class="list_item">
+                          <a href="#">Wastewater Collection Systems</a>
+                      </li>
+                      <li class="divider"></li>
+                      <li id="Property" value="" title="on" class="list_item">
                           <a href="#">Property</a>
+                      </li>
+                      <li class="divider"></li>
+                      <li id="Simple Basemap" value="" title="off" class="list_item">
+                          <a href="#">Simple Basemap</a>
+                      </li>
+                      <li class="divider"></li>
+                      <li id="Impervious" value="" title="on" class="list_item">
+                          <a href="#">Impervious</a>
                       </li>
                   </ul>
               </li>
@@ -136,38 +164,55 @@
     <script src="http://js.arcgis.com/3.8compact"></script>
     <script>
         require(["esri/map",
+            "esri/config",
             "esri/dijit/Scalebar",
             "esri/dijit/LocateButton",
             "src/js/bootstrapmap.js",
+            "src/js/Locate.js",
             "dojo/json",
             "dojo/store/Memory",
+            "dojo/dom",
             "esri/arcgis/utils",
-            "dojo/text!./AddLayersPopupTemplates.js",
+            "esri/SpatialReference",
+            "dojo/text!./src/js/AddLayersPopupTemplates.js",
             "esri/layers/FeatureLayer",
+            "esri/dijit/BasemapGallery",
+            "esri/dijit/Basemap",
+            "esri/dijit/BasemapLayer",
+            "esri/layers/ArcGISDynamicMapServiceLayer",
+            "esri/layers/ArcGISTiledMapServiceLayer",
             "esri/IdentityManager",
             "dojo/domReady!"],
-          function(Map, Scalebar, LocateButton, BootstrapMap, json, Memory, esriUtils, popupTemplate, pathToJson, FeatureLayer) {
+          function(Map,  esriConfig, Scalebar, LocateButton, BootstrapMap, Locate, json, Memory, dom, esriUtils, SpatialReference, popupTemplate, pathToJson, FeatureLayer, BasemapGallery,
+                   Basemap, BasemapLayer, ArcGISDynamicMapServiceLayer, ArcGISTiledMapServiceLayer ) {
             <!-- Get a reference to the ArcGIS Map class -->
 
               var map;
+
               var scalebar;
               var legend;
+              var ServiceURL
+              var FiberTeleCommURL = "https://prod1.spatialsys.com/arcgis/rest/services/CharlesUtilities/Charles_Utilities_FiberComm/MapServer"
 
+             // esriConfig.defaults.io.corsDetection = false;
               // Load web map when page loads
               loadWebmap();
 
               function loadWebmap(e) {
                   // Get new webmap and extract map and map parts
+
                   var mapDeferred = esriUtils.createMap("8adce38ca6ac4641a5601d02edeb3315", "mapDiv", {
                       mapOptions: {
                           slider: true,
                           nav:false,
                           smartNavigation:false
-                      }
+                          },
+                      geometryServiceURL: "http://tasks.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer"
                   });
 
                   mapDeferred.then(function(response) {
                       map = response.map;
+
 
                       geoLocate = new LocateButton({
                           map: map
@@ -177,25 +222,26 @@
                       // Bind to map
                       BootstrapMap.bindTo(map);
 
-                      /*
                       // Add titles
-                      dom.byId("mapTitle").innerHTML = response.itemInfo.item.title;
+                     // dom.byId("mapTitle").innerHTML = response.itemInfo.item.title;
                       //dom.byId("mapSubTitle").innerHTML = response.itemInfo.item.snippet;
                       // Add scalebar and legend
-                      var layers = esri.arcgis.utils.getLegendLayers(response);
-                      if(map.loaded){
+                     // var layers = esri.arcgis.utils.getLegendLayers(response);
+                    /*  if(map.loaded){
 
-
-                          initMapParts(layers);
+                          zoomFullMap();
+                          //initMapParts(layers);
                       }
                       else{
                           on(map,"load",function(){
-                              initMapParts(layers);
+                              zoomFullMap();
+                              //initMapParts(layers);
                           });
                       }*/
 
                   },function(error){
                       alert("Sorry, couldn't load webmap!");
+                      console.log("Err: " + error.message);
                       console.log("Error loading webmap: " & dojo.toJson(error));
                   });
               }
@@ -227,20 +273,11 @@
               $(document).ready(function(){
                   $('#basemapList li').click(function(e) {
                       switch (e.target.text) {
-                          case "Open Street Map":
-                              map.setBasemap("osm");
-                              setPreEvent(false);
-                              setPostEvent(false);
+                          case "Charles Basemap":
+                              setCharlesBasemap();
                               break;
-                          case "Pre Event Imagery":
-                              removeOSM(false);
-                              setPreEvent(true);
-                              setPostEvent(false);
-                              break;
-                          case "Post Event Imagery":
-                              removeOSM(false);
-                              setPreEvent(false);
-                              setPostEvent(true);
+                          case "iMap Orthophoto":
+                              setImagery();
                               break;
                       }
                       if ($(".navbar-collapse.in").length > 0) {
@@ -250,13 +287,48 @@
                   $('#layerList li').click(function(e){
                       switch (e.target.text){
                           case "Water":
+                              toggleItemValue("Water");
                               toggleLayer("Charles_Utilities_Water_7158");
                               break;
                           case "Wastewater":
+                              toggleItemValue("Water");
                               toggleLayer("Charles_Utilities_Wastewater_2309");
                               break;
                           case "Fiber Telecom":
-                              addServiceLayer();
+                              toggleItemValue("Fiber Telecom");
+                              toggleServiceLayer(FiberTeleCommURL,"Fiber Telecom" );
+                              break;
+                          case "Lateral Points":
+                              toggleItemValue("Lateral Points");
+                              toggleLayer("Charles_Utilities_LateralPts_3642");
+                              break;
+                          case "Reclaimed":
+                              toggleItemValue("Reclaimed");
+                              toggleLayer("Charles_Utilities_Reclaimed_2554");
+                              break;
+                          case "Wastewater Collection Systems":
+                              toggleItemValue("Wastewater Collection Systems");
+                              toggleLayer("Charles_Utilities_WastewaterSystems_2211");
+                              break;
+                          case "Property":
+                              toggleItemValue("Property");
+                              toggleLayer("Charles_Utilities_Property_5460");
+                              break;
+                          case "Simple Basemap":
+                              toggleItemValue("Simple Basemap");
+                              toggleLayer("BasemapSimple_740");
+                              break;
+                          case "Impervious":
+                              toggleItemValue("Impervious");
+                              toggleLayer("Impervious_8324");
+                              break;
+                          case "La Plata Sewer":
+                              toggleItemValue("La Plata Sewer");
+                              toggleLayer("SewerActive_1754");
+                              break;
+                          case "La Plata Water":
+                              toggleItemValue("La Plata Water");
+                              toggleLayer("Water_2621");
                               break;
                       }
                       if ($(".navbar-collapse.in").length > 0) {
@@ -303,19 +375,43 @@
                   }
               }
 
-              function addServiceLayer(){
-                  //Add a Map Service layer to the map
-                  //Make a request to get the new JSON object of layers
-/*                  var jsonRequest = esri.request({
-                      url: "/src/js/AddLayers.js",
-                      content: { f: "json" },
-                      handleAs: "json",
-                      callbackParamName: "callback"
-                  });*/
-
-                  var ServiceURL = "https://prod1.spatialsys.com/arcgis/rest/services/CharlesUtilities/Charles_Utilities_FiberComm/MapServer"
+              function toggleServiceLayer(url, inputName){
+                  var graphicsLayers = map.layerIds;
+                  var mapLayer;
+                  var layeraction;
                   var layer;
-                      layer = new esri.layers.ArcGISDynamicMapServiceLayer(ServiceURL);
+
+                  var element = dom.byId(inputName);
+
+                  if (element.title === "on"){
+                      layeraction = "add";
+                  }
+                  else {
+                      layeraction = "remove";
+                  }
+
+              /*    for (var i = 0; i < graphicsLayers.length; i++) {
+                      var layername = graphicsLayers[i];
+                      layer = map.getLayer(layername);
+                      if (layer.id === inputName) {
+                          mapLayer = layer;
+                          var vis = mapLayer.visible;
+                          if (vis) {
+                              layeraction = "remove";
+                          }  else  {
+                              layeraction = "add";
+                          }
+
+
+                      }
+                  }*/
+
+
+                  layer = new esri.layers.ArcGISDynamicMapServiceLayer(url);
+                  ServiceURL = url
+
+                  if (layeraction == "add") {
+
 
                   var requestHandle = esri.request({
                       "url": ServiceURL,
@@ -328,7 +424,7 @@
                       var layerInfo
                               // show layer indexes and names
                               if ( response.hasOwnProperty("layers") ) {
-                                  console.log("got some layers");
+                                  console.log("add layers");
                                   layerInfo = dojo.map(response.layers, function(f) {
                                       return (f.id);
                                   });
@@ -351,21 +447,12 @@
                                       //create the feature layer and apply the popup template
                                       var fL = new esri.layers.FeatureLayer(ServiceURL + "/" + layerInfo[j], {
                                           mode: esri.layers.FeatureLayer.MODE_ONDEMAND,
+                                          id: inputName + "_" + j,
                                           outFields: ["*"],
                                           infoTemplate: PopupTemplate
                                       });
                                       map.addLayer(fL);
-                                      /*                      //create the feature layer and apply the popup template
-                                       var fL = new esri.layers.FeatureLayer(item.url + "/" + layer.serviceInfo.layers[j].id, {
-                                       mode: 2,
-                                       layerId: layer.serviceInfo.layers[j].id,
-                                       id: item.id + "_" + layer.serviceInfo.layers[j].id,
-                                       infoTemplate: PopupTemplate,
-                                       outFields: ["*"]
-                                       });
-                                       this.map.addLayer(fL);*/
-
-                                  }
+                                      }
 
                               } else {
                                   //dojo.byId("content").value = "No layer info found. Please double-check the URL.";
@@ -375,69 +462,222 @@
                           , function requestFailed(){
                               console.log("Request Failed")
                           });
+                  }
+                  else if (layeraction == "remove") {
+                      //TO DO: Update this. Loop through layers in map to find layer, not by creating a new one Remove Layers
+                      var requestHandle = esri.request({
+                          "url": ServiceURL,
+                          "content": {
+                              "f": "json"
+                          },
+                          "callbackParamName": "callback"
+                      });
+                      requestHandle.then(function RequestSucceeded(response){
+                                  var layerInfo
+                                  // show layer indexes and names
+                                  if ( response.hasOwnProperty("layers") ) {
+                                      console.log("remove layers");
+                                      layerInfo = dojo.map(response.layers, function(f) {
+                                          return (f.id);
+                                      });
 
+                                      for (var j = 0; j < layerInfo.length; j++) {
+                                        //Find layer with this id in the map
+                                          for(var b = 0; b < map.graphicsLayerIds.length; b++) {
+                                              var layer = map.getLayer(map.graphicsLayerIds[b]);
+                                              //console.log(layer.id + ' ' + layer.opacity + ' ' + layer.visible);
+                                              if (layer.id == inputName + "_" + j) {
+                                                  //Remove Layer
+                                                  map.removeLayer(layer)
+                                              }
+                                          }
+                                         // map.removeLayer(fL);
+                                      }
 
+                                  } else {
+                                      //dojo.byId("content").value = "No layer info found. Please double-check the URL.";
+                                  }
 
+                              }
+                              , function requestFailed(){
+                                  console.log("Request Failed")
+                              });
 
-  /*                var TemplatefromJson = popupTemplateStore.get(layer.serviceInfo.layers[j].id);
-
-                  var PopupTemplate = new esri.dijit.PopupTemplate({
-                      title: TemplatefromJson.popupInfo.title,
-                      fieldInfos: TemplatefromJson.popupInfo.fieldInfos,
-                      showAttachments: TemplatefromJson.popupInfo.showAttachments,
-                      description: TemplatefromJson.popupInfo.description,
-                      mediaInfos: TemplatefromJson.popupInfo.mediaInfos
-                  })
-
-                                  //create the feature layer and apply the popup template
-                                  var fL = new FeatureLayer(layer.url + "/" + layer.serviceInfo.layers[j].id, {
-                                      mode: 2,
-                                      layerId: layer.serviceInfo.layers[j].id,
-                                      id: Charles_Utilities_FiberComm + "_" + layer.serviceInfo.layers[j].id,
-                                      infoTemplate: PopupTemplate,
-                                      outFields: ["*"]
-                                  });
-                                  this.map.addLayer(fL);
-
-       *//*               //sjh testing
-                      //Set the title for Legend to use.
-                      layer.title = item.name;
-                      //Take on the REST endpoint's serviceinfo JSON. Legend can then check for it and use it.
-                      layer.serviceInfo = node.serviceInfo;*//*
-
-                      //Make sure the layer loads, or show the error, should be converted to layer's load event
-*//*                      connect.connect(map, "onLayerAddResult", lang.hitch(this, function (layer, error) {
-                          if (error)
-                              alert("Error occurred loading in map : " + error.message);
-                          this._paneStandby.hide();
-                      }));*//*
-                      this.map.addLayer(layer);
-                      this.map.addLayer(fL);*/
-                      //sjh testing
+                  }
 
                  }
 
 
-              function setImagery(val){
-                  var graphicsLayers = map.layerIds;
+             function createBasemaps(){
+                 var basemapGroup = null;
+
+                 //Charles County Basemap
+                 var ssaCharleslayer = new BasemapLayer({
+                     url:"https://prod1.spatialsys.com/arcgis/rest/services/Charles/Gazetteer/MapServer"
+                     //url:"https://demo3.spatialsys.com/ArcGIS/rest/services/CharlesCounty/CharlesBasemap/MapServer"
+                 });
+                 var ssaCharlesbasemap = new esri.dijit.Basemap({
+                     layers:[ssaCharleslayer],
+                     title:"Charles Basemap",
+                     thumbnailUrl:"assets/charles_basemap.png"
+                 });
+
+
+                 //MD iMap Imagery / SSA Charles County Mashup
+
+                 var mdImaplayer = new BasemapLayer({
+                     //url:"https://prod1.spatialsys.com/arcgis/rest/services/CharlesStormWater/Basemap/MapServer"
+                     url:"http://www.mdimap.us/ArcGIS/rest/services/ImageryBaseMapsEarthCover/MD.State.6InchImagery/MapServer"
+                 });
+
+                 var ssaCharlesOrtholayer = new BasemapLayer({
+                     //url:"https://prod1.spatialsys.com/arcgis/rest/services/CharlesStormWater/Basemap/MapServer"
+                     url:"https://prod1.spatialsys.com/arcgis/rest/services/Charles/Orthos_2011/MapServer"
+                 });
+
+                 var mdImapbasemap = new esri.dijit.Basemap({
+                     layers:[ssaCharlesOrtholayer, mdImaplayer],
+                     title:"iMap Orthophoto",
+                     thumbnailUrl: "assets/imap_basemap.png"
+                 });
+
+
+                 var basemapGallery = new BasemapGallery({
+                     showArcGISBasemaps: false,
+                     basemapsGroup: basemapGroup,
+                     map: this.map
+                 });
+
+                 basemapGallery.add(ssaCharlesbasemap);
+                 basemapGallery.add(mdImapbasemap);
+
+
+
+             }
+
+
+              function setCharlesBasemap(val){
+
+                  //get title of basemap
+                  /*        var bmDict = {};
+                   var currentBasemapName = map.basemap.title*/
+
+                  var mapLayers = map.layerIds;
+
                   var mapLayer;
-                  for (var i = 0; i < graphicsLayers.length; i++) {
-                      var layername = graphicsLayers[i];
+                  for (var i = 0; i < mapLayers.length; i++) {
+                      var layername = mapLayers[i];
                       var layer = map.getLayer(layername);
-                      if (layer.id === "Charles_Utilities_Water_7158") {
-                          mapLayer = layer;
-                          mapLayer.setVisibility(val)
+                      if (layer._basemapGalleryLayerType){
+                          map.removeLayer(layer)
+                      }
+                      else if (layername == "SSA OrthoLayer") {
+                          map.removeLayer(layer)
+                      }
+                      else if (layername == "iMap OrthoLayer") {
+                          map.removeLayer(layer)
                       }
                   }
+                  //MD iMap Imagery / SSA Charles County Mashup*/
+
+                  var charlesBasemapLayer = new esri.dijit.BasemapLayer({
+                      //url:"https://prod1.spatialsys.com/arcgis/rest/services/CharlesStormWater/Basemap/MapServer"
+                      url:"https://prod1.spatialsys.com/arcgis/rest/services/Charles/Gazetteer/MapServer"
+                  });
+
+                  var charlesBasemap = new esri.dijit.Basemap({
+                      layers:[charlesBasemapLayer],
+                      title:"Charles Gazeteer",
+                      thumbnailUrl: "assets/imap_basemap.png"
+                  });
+
+
+                  //Add Layers to Map
+                  var charlesGazeteerlayer = new esri.layers.ArcGISDynamicMapServiceLayer("https://prod1.spatialsys.com/arcgis/rest/services/Charles/Gazetteer/MapServer", {
+                      id:"Charles Gazeteer OrthoLayer",
+                      visible: true
+                  });
+
+                  //map.addLayers([ssaOrtholayer, iMapOrtholayer]);
+                  map.addLayer(charlesGazeteerlayer, 0);
+
+
+                  map.setBasemap(charlesBasemap)
               }
+
+              function setImagery(val){
+                //get title of basemap
+          /*        var bmDict = {};
+                  var currentBasemapName = map.basemap.title*/
+
+                  var mapLayers = map.layerIds;
+
+                  var mapLayer;
+                  for (var i = 0; i < mapLayers.length; i++) {
+                      var layername = mapLayers[i];
+                      var layer = map.getLayer(layername);
+                      if (layer._basemapGalleryLayerType){
+                          map.removeLayer(layer)
+                      }
+                      else if (layername == "Charles Gazeteer OrthoLayer") {
+                          map.removeLayer(layer)
+                      }
+                  }
+                  //MD iMap Imagery / SSA Charles County Mashup*/
+
+                  var mdImaplayer = new esri.dijit.BasemapLayer({
+                      //url:"https://prod1.spatialsys.com/arcgis/rest/services/CharlesStormWater/Basemap/MapServer"
+                      url:"http://www.mdimap.us/ArcGIS/rest/services/ImageryBaseMapsEarthCover/MD.State.6InchImagery/MapServer"
+                  });
+
+                  var ssaCharlesOrtholayer = new esri.dijit.BasemapLayer({
+                      //url:"https://prod1.spatialsys.com/arcgis/rest/services/CharlesStormWater/Basemap/MapServer"
+                      url:"https://prod1.spatialsys.com/arcgis/rest/services/Charles/Orthos_2011/MapServer"
+                  });
+
+                  var mdImapbasemap = new esri.dijit.Basemap({
+                      layers:[ssaCharlesOrtholayer, mdImaplayer],
+                      title:"iMap Orthophoto",
+                      thumbnailUrl: "assets/imap_basemap.png"
+                  });
+
+
+                  //Add Layers to Map
+                  var ssaOrtholayer = new esri.layers.ArcGISDynamicMapServiceLayer("https://prod1.spatialsys.com/arcgis/rest/services/Charles/Orthos_2011/MapServer", {
+                      id:"SSA OrthoLayer",
+                      visible: true
+                  });
+                  var iMapOrtholayer = new esri.layers.ArcGISDynamicMapServiceLayer("http://www.mdimap.us/ArcGIS/rest/services/ImageryBaseMapsEarthCover/MD.State.6InchImagery/MapServer", {
+                      id:"iMap OrthoLayer",
+                      visible: true
+                  })
+
+                  //map.addLayers([ssaOrtholayer, iMapOrtholayer]);
+                  map.addLayer(ssaOrtholayer, 0);
+                  map.addLayer(iMapOrtholayer, 0);
+
+                  map.setBasemap(mdImapbasemap)
+
+              }
+
 
 
               function zoomFullMap(){
-                  var startExtent = new esri.geometry.Extent(-77.27, 38.25,-76.64, 38.726);
+                  var startExtent = new esri.geometry.Extent(368738.272,  65196.133, 428732.663,  115996.235, new SpatialReference({ wkid:26985 }));
                   map.setExtent(startExtent);
               }
 
+              function toggleItemValue(inputName){
+                  var element = dom.byId(inputName);
 
+                  if (element.title === "off"){
+                      element.title = "on";
+                  }
+                  else {
+                      element.title = "off";
+                  }
+
+              }
 
               function toggleLayer(inputName){
                   var graphicsLayers = map.layerIds;

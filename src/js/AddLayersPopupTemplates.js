@@ -19,15 +19,7 @@
             "description": null,
             "showAttachments": true,
             "mediaInfos": [
-                {
-                    "title": "Source Documents",
-                    "type": "image",
-                    "caption": "",
-                    "value": {
-                        "sourceURL": "https://prod1.spatialsys.com/charlesww_imap/Assets/OpenL.png",
-                        "linkURL": "https://maps.spatialsys.com/charles/ImageLookupViewer/Default.aspx?feat_id={UTIL_ID}"
-                    }
-                }
+
             ]
         }
     },
@@ -65,15 +57,6 @@
             "description": null,
             "showAttachments": true,
             "mediaInfos": [
-                {
-                    "title": "Source Documents",
-                    "type": "image",
-                    "caption": "",
-                    "value": {
-                        "sourceURL": "https://prod1.spatialsys.com/charlesww_imap/Assets/OpenL.png",
-                        "linkURL": "https://maps.spatialsys.com/charles/ImageLookupViewer/Default.aspx?feat_id={UTIL_ID}"
-                    }
-                }
             ]
         }
     },
@@ -114,15 +97,6 @@
             "description": null,
             "showAttachments": true,
             "mediaInfos": [
-                {
-                    "title": "Source Documents",
-                    "type": "image",
-                    "caption": "",
-                    "value": {
-                        "sourceURL": "https://prod1.spatialsys.com/charlesww_imap/Assets/OpenL.png",
-                        "linkURL": "https://maps.spatialsys.com/charles/ImageLookupViewer/Default.aspx?feat_id={UTIL_ID}"
-                    }
-                }
             ]
         }
     },
@@ -162,16 +136,7 @@
             "description": null,
             "showAttachments": true,
             "mediaInfos": [
-                {
-                    "title": "Source Documents",
-                    "type": "image",
-                    "caption": "",
-                    "value": {
-                        "sourceURL": "https://prod1.spatialsys.com/charlesww_imap/Assets/OpenL.png",
-                        "linkURL": "https://maps.spatialsys.com/charles/ImageLookupViewer/Default.aspx?feat_id={UTIL_ID}"
-                    }
-                }
-            ]
+                           ]
         }
     },
     {
@@ -211,15 +176,7 @@
             "description": null,
             "showAttachments": true,
             "mediaInfos": [
-                {
-                    "title": "Source Documents",
-                    "type": "image",
-                    "caption": "",
-                    "value": {
-                        "sourceURL": "https://prod1.spatialsys.com/charlesww_imap/Assets/OpenL.png",
-                        "linkURL": "https://maps.spatialsys.com/charles/ImageLookupViewer/Default.aspx?feat_id={UTIL_ID}"
-                    }
-                }
+
             ]
         }
     },
@@ -260,15 +217,7 @@
             "description": null,
             "showAttachments": true,
             "mediaInfos": [
-                {
-                    "title": "Source Documents",
-                    "type": "image",
-                    "caption": "",
-                    "value": {
-                        "sourceURL": "https://prod1.spatialsys.com/charlesww_imap/Assets/OpenL.png",
-                        "linkURL": "https://maps.spatialsys.com/charles/ImageLookupViewer/Default.aspx?feat_id={UTIL_ID}"
-                    }
-                }
+
             ]
         }
     },
@@ -310,15 +259,6 @@
             "description": null,
             "showAttachments": true,
             "mediaInfos": [
-                {
-                    "title": "Source Documents",
-                    "type": "image",
-                    "caption": "",
-                    "value": {
-                        "sourceURL": "https://prod1.spatialsys.com/charlesww_imap/Assets/OpenL.png",
-                        "linkURL": "https://maps.spatialsys.com/charles/ImageLookupViewer/Default.aspx?feat_id={UTIL_ID}"
-                    }
-                }
             ]
         }
     },
@@ -359,16 +299,7 @@
             "description": null,
             "showAttachments": true,
             "mediaInfos": [
-                {
-                    "title": "Source Documents",
-                    "type": "image",
-                    "caption": "",
-                    "value": {
-                        "sourceURL": "https://prod1.spatialsys.com/charlesww_imap/Assets/OpenL.png",
-                        "linkURL": "https://maps.spatialsys.com/charles/ImageLookupViewer/Default.aspx?feat_id={UTIL_ID}"
-                    }
-                }
-            ]
+                            ]
         }
     },
     {
@@ -406,17 +337,7 @@
             ],
             "description": null,
             "showAttachments": true,
-            "mediaInfos": [
-                {
-                    "title": "Source Documents",
-                    "type": "image",
-                    "caption": "",
-                    "value": {
-                        "sourceURL": "https://prod1.spatialsys.com/charlesww_imap/Assets/OpenL.png",
-                        "linkURL": "https://maps.spatialsys.com/charles/ImageLookupViewer/Default.aspx?feat_id={UTIL_ID}"
-                    }
-                }
-            ]
+            "mediaInfos": []
         }
     },
     {
@@ -455,17 +376,7 @@
             ],
             "description": null,
             "showAttachments": true,
-            "mediaInfos": [
-                {
-                    "title": "Source Documents",
-                    "type": "image",
-                    "caption": "",
-                    "value": {
-                        "sourceURL": "https://prod1.spatialsys.com/charlesww_imap/Assets/OpenL.png",
-                        "linkURL": "https://maps.spatialsys.com/charles/ImageLookupViewer/Default.aspx?feat_id={UTIL_ID}"
-                    }
-                }
-            ]
+            "mediaInfos": []
         }
     },
     {
@@ -508,17 +419,7 @@
             ],
             "description": null,
             "showAttachments": true,
-            "mediaInfos": [
-                {
-                    "title": "Source Documents",
-                    "type": "image",
-                    "caption": "",
-                    "value": {
-                        "sourceURL": "https://prod1.spatialsys.com/charlesww_imap/Assets/OpenL.png",
-                        "linkURL": "https://maps.spatialsys.com/charles/ImageLookupViewer/Default.aspx?feat_id={UTIL_ID}"
-                    }
-                }
-            ]
+            "mediaInfos": []
         }
     },
     {
@@ -552,17 +453,7 @@
             ],
             "description": null,
             "showAttachments": true,
-            "mediaInfos": [
-                {
-                    "title": "Source Documents",
-                    "type": "image",
-                    "caption": "",
-                    "value": {
-                        "sourceURL": "https://prod1.spatialsys.com/charlesww_imap/Assets/OpenL.png",
-                        "linkURL": "https://maps.spatialsys.com/charles/ImageLookupViewer/Default.aspx?feat_id={UTIL_ID}"
-                    }
-                }
-            ]
+            "mediaInfos": []
         }
     },
     {
@@ -596,17 +487,7 @@
             ],
             "description": null,
             "showAttachments": true,
-            "mediaInfos": [
-                {
-                    "title": "Source Documents",
-                    "type": "image",
-                    "caption": "",
-                    "value": {
-                        "sourceURL": "https://prod1.spatialsys.com/charlesww_imap/Assets/OpenL.png",
-                        "linkURL": "https://maps.spatialsys.com/charles/ImageLookupViewer/Default.aspx?feat_id={UTIL_ID}"
-                    }
-                }
-            ]
+            "mediaInfos": []
         }
     },
     {
@@ -645,17 +526,7 @@
             ],
             "description": null,
             "showAttachments": true,
-            "mediaInfos": [
-                {
-                    "title": "Source Documents",
-                    "type": "image",
-                    "caption": "",
-                    "value": {
-                        "sourceURL": "https://prod1.spatialsys.com/charlesww_imap/Assets/OpenL.png",
-                        "linkURL": "https://maps.spatialsys.com/charles/ImageLookupViewer/Default.aspx?feat_id={UTIL_ID}"
-                    }
-                }
-            ]
+            "mediaInfos": []
         }
     },
     {
@@ -695,17 +566,7 @@
             ],
             "description": null,
             "showAttachments": true,
-            "mediaInfos": [
-                {
-                    "title": "Source Documents",
-                    "type": "image",
-                    "caption": "",
-                    "value": {
-                        "sourceURL": "https://prod1.spatialsys.com/charlesww_imap/Assets/OpenL.png",
-                        "linkURL": "https://maps.spatialsys.com/charles/ImageLookupViewer/Default.aspx?feat_id={UTIL_ID}"
-                    }
-                }
-            ]
+            "mediaInfos": []
         }
     },
     {
@@ -744,17 +605,7 @@
             ],
             "description": null,
             "showAttachments": true,
-            "mediaInfos": [
-                {
-                    "title": "Source Documents",
-                    "type": "image",
-                    "caption": "",
-                    "value": {
-                        "sourceURL": "https://prod1.spatialsys.com/charlesww_imap/Assets/OpenL.png",
-                        "linkURL": "https://maps.spatialsys.com/charles/ImageLookupViewer/Default.aspx?feat_id={UTIL_ID}"
-                    }
-                }
-            ]
+            "mediaInfos": []
         }
     },
     {
@@ -775,17 +626,7 @@
             ],
             "description": null,
             "showAttachments": true,
-            "mediaInfos": [
-                {
-                    "title": "Source Documents",
-                    "type": "image",
-                    "caption": "",
-                    "value": {
-                        "sourceURL": "https://prod1.spatialsys.com/charlesww_imap/Assets/OpenL.png",
-                        "linkURL": "https://maps.spatialsys.com/charles/ImageLookupViewer/Default.aspx?feat_id={UTIL_ID}"
-                    }
-                }
-            ]
+            "mediaInfos": []
         }
     },
     {
@@ -830,17 +671,7 @@
             ],
             "description": null,
             "showAttachments": true,
-            "mediaInfos": [
-                {
-                    "title": "Source Documents",
-                    "type": "image",
-                    "caption": "",
-                    "value": {
-                        "sourceURL": "https://prod1.spatialsys.com/charlesww_imap/Assets/OpenL.png",
-                        "linkURL": "https://maps.spatialsys.com/charles/ImageLookupViewer/Default.aspx?feat_id={UTIL_ID}"
-                    }
-                }
-            ]
+            "mediaInfos": []
         }
     },
     {
@@ -878,17 +709,7 @@
             ],
             "description": null,
             "showAttachments": true,
-            "mediaInfos": [
-                {
-                    "title": "Source Documents",
-                    "type": "image",
-                    "caption": "",
-                    "value": {
-                        "sourceURL": "https://prod1.spatialsys.com/charlesww_imap/Assets/OpenL.png",
-                        "linkURL": "https://maps.spatialsys.com/charles/ImageLookupViewer/Default.aspx?feat_id={UTIL_ID}"
-                    }
-                }
-            ]
+            "mediaInfos": []
         }
     },
     {
@@ -927,17 +748,7 @@
             ],
             "description": null,
             "showAttachments": true,
-            "mediaInfos": [
-                {
-                    "title": "Source Documents",
-                    "type": "image",
-                    "caption": "",
-                    "value": {
-                        "sourceURL": "https://prod1.spatialsys.com/charlesww_imap/Assets/OpenL.png",
-                        "linkURL": "https://maps.spatialsys.com/charles/ImageLookupViewer/Default.aspx?feat_id={UTIL_ID}"
-                    }
-                }
-            ]
+            "mediaInfos": []
         }
     },
     {
@@ -980,17 +791,7 @@
             ],
             "description": null,
             "showAttachments": true,
-            "mediaInfos": [
-                {
-                    "title": "Source Documents",
-                    "type": "image",
-                    "caption": "",
-                    "value": {
-                        "sourceURL": "https://prod1.spatialsys.com/charlesww_imap/Assets/OpenL.png",
-                        "linkURL": "https://maps.spatialsys.com/charles/ImageLookupViewer/Default.aspx?feat_id={UTIL_ID}"
-                    }
-                }
-            ]
+            "mediaInfos": []
         }
     },
     {
@@ -1035,17 +836,7 @@
             ],
             "description": null,
             "showAttachments": true,
-            "mediaInfos": [
-                {
-                    "title": "Source Documents",
-                    "type": "image",
-                    "caption": "",
-                    "value": {
-                        "sourceURL": "https://prod1.spatialsys.com/charlesww_imap/Assets/OpenL.png",
-                        "linkURL": "https://maps.spatialsys.com/charles/ImageLookupViewer/Default.aspx?feat_id={UTIL_ID}"
-                    }
-                }
-            ]
+            "mediaInfos": []
         }
     },
     {
@@ -1085,17 +876,7 @@
             ],
             "description": null,
             "showAttachments": true,
-            "mediaInfos": [
-                {
-                    "title": "Source Documents",
-                    "type": "image",
-                    "caption": "",
-                    "value": {
-                        "sourceURL": "https://prod1.spatialsys.com/charlesww_imap/Assets/OpenL.png",
-                        "linkURL": "https://maps.spatialsys.com/charles/ImageLookupViewer/Default.aspx?feat_id={UTIL_ID}"
-                    }
-                }
-            ]
+            "mediaInfos": []
         }
     }
 ]

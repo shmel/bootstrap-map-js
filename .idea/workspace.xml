@@ -23,47 +23,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/css/style.css">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="12" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
+            <state line="565" column="0" selection-start="25345" selection-end="25345" vertical-scroll-proportion="0.0" vertical-offset="8840" max-vertical-offset="11832">
               <folding>
-                <marker date="1395170822581" expanded="true" signature="401:497" placeholder="{...}" />
-                <marker date="1395170822581" expanded="true" signature="535:581" placeholder="{...}" />
+                <element signature="e#23176#25095#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="docs.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bootstrap_v3/docs-assets/css/docs.css">
+      <file leaf-file-name="home_locate.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/images/home_locate.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Locate.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/Locate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="714" column="23" selection-start="63657" selection-end="63657" vertical-scroll-proportion="0.0" vertical-offset="11000" max-vertical-offset="18887">
+            <state line="24" column="87" selection-start="678" selection-end="678" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1088">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="AddLayersPopupTemplates.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/AddLayersPopupTemplates.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="144" column="53" selection-start="6356" selection-end="6356" vertical-scroll-proportion="0.49908257" vertical-offset="714" max-vertical-offset="5423">
-              <folding>
-                <element signature="tag#div#0;tag#body#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="n#style#0;n#div#1;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="tag#div#1;tag#body#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="e#8515#9129#0" expanded="false" />
-                <element signature="e#9233#12152#0" expanded="false" />
-                <element signature="e#12201#12707#0" expanded="false" />
-              </folding>
+            <state line="875" column="14" selection-start="113323" selection-end="113323" vertical-scroll-proportion="0.0" vertical-offset="14540" max-vertical-offset="15096">
+              <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="check.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/images/check.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="bootstrapmap.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/bootstrapmap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="141" column="14" selection-start="2763" selection-end="2763" vertical-scroll-proportion="-18.76" vertical-offset="1928" max-vertical-offset="7684">
+            <state line="54" column="0" selection-start="1019" selection-end="1019" vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="7871">
               <folding />
             </state>
           </provider>
@@ -80,13 +86,7 @@
         <entry file="file://$PROJECT_DIR$/src/images/Bootstrap Map JS - Web Map_files/esri.css">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="49456" selection-start="49456" selection-end="49456" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-              <folding>
-                <marker date="1394819694797" expanded="true" signature="11143:11801" placeholder="data:image/svg+xml" />
-                <marker date="1394819694797" expanded="true" signature="12705:13363" placeholder="data:image/svg+xml" />
-                <marker date="1394819694797" expanded="true" signature="24124:24143" placeholder="data:image/svg+xml" />
-                <marker date="1394819694797" expanded="true" signature="28201:28859" placeholder="data:image/svg+xml" />
-                <marker date="1394819694797" expanded="true" signature="29897:30555" placeholder="data:image/svg+xml" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -94,7 +94,7 @@
       <file leaf-file-name="bootstrapmap.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/bootstrapmap.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="213" column="11" selection-start="7924" selection-end="7924" vertical-scroll-proportion="-13.72" vertical-offset="3278" max-vertical-offset="4845">
+            <state line="213" column="11" selection-start="7924" selection-end="7924" vertical-scroll-proportion="0.0" vertical-offset="3278" max-vertical-offset="4845">
               <folding />
             </state>
           </provider>
@@ -117,6 +117,10 @@
         <option value="$PROJECT_DIR$/templates/images/Bootstrap Map JS - Web Map.html" />
         <option value="$PROJECT_DIR$/fullmap-template.css" />
         <option value="$PROJECT_DIR$/src/css/bootstrapmap.css" />
+        <option value="$PROJECT_DIR$/src/js/AddLayersPopupTemplates.js" />
+        <option value="$PROJECT_DIR$/src/js/Locate.js" />
+        <option value="$PROJECT_DIR$/src/js/webmap.js" />
+        <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -184,6 +188,10 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -243,23 +251,25 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="Q:/IOM" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test.html" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="options.lastSelected" value="web-ide.project.structure" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\shmel\Documents\GitHub\bootstrap-map-js" />
       <recent name="C:\Users\shmel\Documents\GitHub\bootstrap-map-js\src\css" />
+      <recent name="C:\Users\shmel\Documents\GitHub\bootstrap-map-js\src\js" />
+      <recent name="C:\Users\shmel\Documents\GitHub\bootstrap-map-js" />
       <recent name="C:\Users\shmel\Documents\GitHub\bootstrap-map-js\src\images" />
       <recent name="C:\Users\shmel\Documents\GitHub\bootstrap-map-js\src" />
-      <recent name="C:\Users\shmel\Documents\GitHub\bootstrap-map-js\" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.WebMapTemplate">
+  <component name="RunManager" selected="JavaScript Debug.test">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -301,8 +311,14 @@
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
-    <list size="1">
+    <configuration default="false" name="test" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" uri="http://localhost:63343/bootstrap-map-js/test.html">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.WebMapTemplate" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.test" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -338,11 +354,10 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43600866" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30104166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3253796" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34815618" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14790288" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -350,6 +365,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43600866" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -391,30 +407,230 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
+        <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/index.html</url>
-          <line>316</line>
+          <line>345</line>
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
+        <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/index.html</url>
-          <line>317</line>
+          <line>346</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/index.html</url>
+          <line>654</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="2" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/images/Bootstrap Map JS - Web Map_files/esri.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="49456" selection-start="49456" selection-end="49456" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/bootstrapmap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="213" column="11" selection-start="7924" selection-end="7924" vertical-scroll-proportion="0.0" vertical-offset="3278" max-vertical-offset="4845">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="589" column="0" selection-start="26192" selection-end="26192" vertical-scroll-proportion="0.0" vertical-offset="10013" max-vertical-offset="11322">
+          <folding>
+            <element signature="e#23176#25095#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/home_locate.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/webmap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="56" selection-start="1431" selection-end="1431" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="344420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/Locate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="87" selection-start="678" selection-end="678" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1088">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/AddLayersPopupTemplates.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="875" column="14" selection-start="113323" selection-end="113323" vertical-scroll-proportion="0.0" vertical-offset="14540" max-vertical-offset="15096">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/check.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/bootstrapmap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="0" selection-start="1019" selection-end="1019" vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="7871">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/CC_Logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/Bootstrap Map JS - Web Map_files/esri.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="49456" selection-start="49456" selection-end="49456" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/bootstrapmap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="213" column="11" selection-start="7924" selection-end="7924" vertical-scroll-proportion="0.0" vertical-offset="3278" max-vertical-offset="4845">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap_v3/docs-assets/css/docs.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="714" column="23" selection-start="63657" selection-end="63657" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="18887">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="228" column="44" selection-start="10192" selection-end="10192" vertical-scroll-proportion="0.0" vertical-offset="3876" max-vertical-offset="10234">
+          <folding>
+            <element signature="e#23176#25095#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/webmap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="7" selection-start="1086" selection-end="1439" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="9605">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/Locate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="87" selection-start="678" selection-end="678" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1088">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/AddLayersPopupTemplates.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="875" column="14" selection-start="113323" selection-end="113323" vertical-scroll-proportion="0.0" vertical-offset="14540" max-vertical-offset="15096">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/check.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/bootstrapmap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="0" selection-start="1019" selection-end="1019" vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="7871">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/CC_Logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/Bootstrap Map JS - Web Map_files/esri.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="49456" selection-start="49456" selection-end="49456" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/bootstrapmap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="213" column="11" selection-start="7924" selection-end="7924" vertical-scroll-proportion="0.0" vertical-offset="3278" max-vertical-offset="4845">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="12" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap_v3/docs-assets/css/docs.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="714" column="23" selection-start="63657" selection-end="63657" vertical-scroll-proportion="0.0" vertical-offset="12138" max-vertical-offset="18887">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="420" column="112" selection-start="18349" selection-end="18349" vertical-scroll-proportion="0.0" vertical-offset="7140" max-vertical-offset="8381">
+          <folding>
+            <element signature="e#23176#25095#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/bootstrapmap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="141" column="14" selection-start="2763" selection-end="2763" vertical-scroll-proportion="0.0" vertical-offset="2397" max-vertical-offset="7684">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/CC_Logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/Bootstrap Map JS - Web Map_files/esri.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="49456" selection-start="49456" selection-end="49456" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/bootstrapmap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="213" column="11" selection-start="7924" selection-end="7924" vertical-scroll-proportion="0.0" vertical-offset="3278" max-vertical-offset="4845">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="84" column="27" selection-start="3150" selection-end="3150" vertical-scroll-proportion="0.0" vertical-offset="1428" max-vertical-offset="2822">
           <folding>
-            <element signature="tag#div#0;tag#body#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="tag#div#1;tag#body#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="e#8515#9129#0" expanded="false" />
-            <element signature="e#9233#12152#0" expanded="false" />
-            <element signature="e#12201#12707#0" expanded="false" />
+            <element signature="e#23176#25095#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -428,104 +644,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/webmap-template/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="32" selection-start="3597" selection-end="3597" vertical-scroll-proportion="-0.29243353" vertical-offset="2302" max-vertical-offset="3366">
-          <folding />
-        </state>
+        <state line="127" column="32" selection-start="3597" selection-end="3597" vertical-scroll-proportion="-0.29243353" vertical-offset="2302" max-vertical-offset="3366" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/images/Bootstrap Map JS - Web Map_files/esri.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="49456" selection-start="49456" selection-end="49456" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="579">
-          <folding>
-            <marker date="1394819694797" expanded="true" signature="11143:11801" placeholder="data:image/svg+xml" />
-            <marker date="1394819694797" expanded="true" signature="12705:13363" placeholder="data:image/svg+xml" />
-            <marker date="1394819694797" expanded="true" signature="24124:24143" placeholder="data:image/svg+xml" />
-            <marker date="1394819694797" expanded="true" signature="28201:28859" placeholder="data:image/svg+xml" />
-            <marker date="1394819694797" expanded="true" signature="29897:30555" placeholder="data:image/svg+xml" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/images/Bootstrap Map JS - Web Map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="135" selection-start="17255" selection-end="17255" vertical-scroll-proportion="4.396022" vertical-offset="51" max-vertical-offset="4199">
-          <folding />
-        </state>
+        <state line="146" column="135" selection-start="17255" selection-end="17255" vertical-scroll-proportion="4.396022" vertical-offset="51" max-vertical-offset="4199" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/webmap-template/webmap-template.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="12" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
-          <folding>
-            <marker date="1395170822581" expanded="true" signature="401:497" placeholder="{...}" />
-            <marker date="1395170822581" expanded="true" signature="535:581" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo/media.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="9" selection-start="1489" selection-end="1489" vertical-scroll-proportion="1.3383584" vertical-offset="0" max-vertical-offset="3774">
-          <folding>
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395170822615" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="{&quot;zoom&quot;: 11...}" />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395170822615" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
+        <state line="47" column="9" selection-start="1489" selection-end="1489" vertical-scroll-proportion="1.3383584" vertical-offset="0" max-vertical-offset="3774" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap_v3/docs-assets/css/docs.css">
@@ -542,9 +690,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fullmap-template.css">
+    <entry file="file://$PROJECT_DIR$/src/css/fullmap-template.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="0" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/CC_Logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/AddLayers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="19" selection-start="660" selection-end="687" vertical-scroll-proportion="0.3137584" vertical-offset="0" max-vertical-offset="596" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/check.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/bootstrapmap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="213" column="11" selection-start="7924" selection-end="7924" vertical-scroll-proportion="0.0" vertical-offset="3278" max-vertical-offset="4845">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/bootstrapmap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="0" selection-start="1019" selection-end="1019" vertical-scroll-proportion="0.0" vertical-offset="711" max-vertical-offset="7871">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/AddLayersPopupTemplates.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="875" column="14" selection-start="113323" selection-end="113323" vertical-scroll-proportion="0.0" vertical-offset="14540" max-vertical-offset="15096">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/webmap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="56" selection-start="1431" selection-end="1431" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9605">
           <folding />
         </state>
       </provider>
@@ -554,44 +745,25 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/CC_Logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/bootstrapmap.css">
+    <entry file="file://$PROJECT_DIR$/src/js/Locate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="14" selection-start="2763" selection-end="2763" vertical-scroll-proportion="-18.76" vertical-offset="1928" max-vertical-offset="7684">
+        <state line="24" column="87" selection-start="678" selection-end="678" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1054">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/bootstrapmap.js">
+    <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="213" column="11" selection-start="7924" selection-end="7924" vertical-scroll-proportion="-13.72" vertical-offset="3278" max-vertical-offset="4845">
+        <state line="97" column="8" selection-start="3317" selection-end="3317" vertical-scroll-proportion="-16.538462" vertical-offset="1219" max-vertical-offset="1802">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/AddLayers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="19" selection-start="660" selection-end="687" vertical-scroll-proportion="0.3137584" vertical-offset="0" max-vertical-offset="596">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="53" selection-start="6356" selection-end="6356" vertical-scroll-proportion="0.49908257" vertical-offset="714" max-vertical-offset="5423">
+        <state line="565" column="0" selection-start="25345" selection-end="25345" vertical-scroll-proportion="0.0" vertical-offset="8840" max-vertical-offset="11832">
           <folding>
-            <element signature="tag#div#0;tag#body#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="tag#div#1;tag#body#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="e#8515#9129#0" expanded="false" />
-            <element signature="e#9233#12152#0" expanded="false" />
-            <element signature="e#12201#12707#0" expanded="false" />
+            <element signature="e#23176#25095#0" expanded="false" />
           </folding>
         </state>
       </provider>

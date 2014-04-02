@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="//js.arcgis.com/3.8/js/esri/css/esri.css">
+    <style>
+        html, body, #map {
+            height: 100%; width: 100%; margin: 0; padding: 0;
+        }
+    </style>
+
+    <script src="//js.arcgis.com/3.8/"></script>
+    <script>
+        var map;
+
+        require([
+            "esri/map",
+            "esri/dijit/Basemap",
+            "esri/dijit/BasemapGallery",
+                "dijit/form/Button"
+        ], function(
+                Map,
+                Basemap,
+                BasemapGallery,
+                Button
+                ) {
+
+            map = new esri.Map("map", {
+                center: [-76.935756, 38.594137],
+                zoom: 11
+            });
+
+
+            //Create Basemaps and Basemap Gallery
+            //MD iMap Imagery / SSA Charles County Mashup*/
+
+            var mdImaplayer = new esri.dijit.BasemapLayer({
+                //url:"https://prod1.spatialsys.com/arcgis/rest/services/CharlesStormWater/Basemap/MapServer"
+                url:"http://www.mdimap.us/ArcGIS/rest/services/ImageryBaseMapsEarthCover/MD.State.6InchImagery/MapServer"
+            });
+
+            var ssaCharlesOrtholayer = new esri.dijit.BasemapLayer({
+                //url:"https://prod1.spatialsys.com/arcgis/rest/services/CharlesStormWater/Basemap/MapServer"
+                url:"https://prod1.spatialsys.com/arcgis/rest/services/Charles/Orthos_2011/MapServer"
+            });
+
+            var mdImapbasemap = new esri.dijit.Basemap({
+                layers:[ssaCharlesOrtholayer, mdImaplayer],
+                title:"iMap Orthophoto",
+                thumbnailUrl: "assets/imap_basemap.png"
+            });
+
+
+            //Gazeteer
+            var charlesBasemapLayer = new esri.dijit.BasemapLayer({
+                //url:"https://prod1.spatialsys.com/arcgis/rest/services/CharlesStormWater/Basemap/MapServer"
+                url:"https://prod1.spatialsys.com/arcgis/rest/services/Charles/Gazetteer/MapServer"
+            });
+
+            var charlesBasemap = new esri.dijit.Basemap({
+                layers:[charlesBasemapLayer],
+                title:"Charles Gazeteer",
+                thumbnailUrl: "assets/imap_basemap.png"
+            });
+
+
+            var basemapGallery = new BasemapGallery({
+                showArcGISBasemaps: false,
+                map: this.map
+            });
+
+            basemapGallery.add(charlesBasemap);
+            basemapGallery.add(mdImapbasemap);
+
+            imagerybutton = new dijit.form.Button({
+                label: "Imagery",
+                onClick: function(){
+                    //Change to Imagery Basemap
+                    map.setBasemap(mdImapbasemap)
+                }
+            }, "imageryButtonNode");
+
+            gazbutton = new dijit.form.Button({
+                label: "Gazeteer",
+                onClick: function(){
+                    //Change to Imagery Basemap
+                    map.setBasemap(charlesBasemap)
+                }
+            }, "gazButtonNode");
+        });
+    </script>
+</head>
+<body>
+<div id="map">
+    <button id="imageryButtonNode" type="button"></button>
+    <button id="gazButtonNode" type="button"></button>
+</div>
+</body>
+</html>
