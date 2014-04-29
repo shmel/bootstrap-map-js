@@ -5,7 +5,11 @@ body {
 .navbar-brand {
   padding-top: 5px;
   padding-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
+
 
 .navbar-brand-image {
   height: 34px;
@@ -20,6 +24,64 @@ body {
 .navbar-inverse .navbar-brand {
 	font-size: 18px;
 	color: #fff;
+}
+
+/*iphone media tag*/
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+    .navbar-inverse .navbar-brand{
+        width: 60%;
+    }
+
+
+}
+
+/*other device screen limits*/
+@media (min-width: 362px){
+    .navbar-inverse .navbar-brand{
+        font-size: 9px
+    }
+}
+@media (min-width: 373px)  {
+    .navbar-inverse .navbar-brand{
+        font-size: 10px
+    }
+}
+@media (min-width: 390px)  {
+    .navbar-inverse .navbar-brand{
+        font-size: 11px
+    }
+}
+@media (min-width: 398px){
+    .navbar-inverse .navbar-brand{
+        font-size: 12px
+    }
+}
+@media (min-width: 413px){
+    .navbar-inverse .navbar-brand{
+        font-size: 13px
+    }
+}
+@media (min-width: 418px){
+    .navbar-inverse .navbar-brand{
+        font-size: 14px
+    }
+}
+@media (min-width: 431px){
+    .navbar-inverse .navbar-brand{
+        font-size: 15px
+    }
+}
+@media (min-width: 439px){
+    .navbar-inverse .navbar-brand{
+        font-size: 16px
+    }
+}
+@media (min-width: 461px){
+    .navbar-inverse .navbar-brand{
+        font-size: 17px
+    }
 }
 
 .container {

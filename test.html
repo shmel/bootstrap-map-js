@@ -2,100 +2,58 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title></title>
-    <link rel="stylesheet" href="//js.arcgis.com/3.8/js/esri/css/esri.css">
+    <!--The viewport meta tag is used to improve the presentation and behavior of the samples 
+      on iOS devices-->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+    <title>Mobile Popup</title>
+    <link rel="stylesheet" href="http://js.arcgis.com/3.9/js/esri/css/esri.css">
     <style>
-        html, body, #map {
-            height: 100%; width: 100%; margin: 0; padding: 0;
+        html, body, #mapDiv { height: 100%; width: 100%; margin: 0; padding: 0; }
+        .esriScalebar{
+            padding: 20px 20px;
         }
     </style>
 
-    <script src="//js.arcgis.com/3.8/"></script>
+    <script src="http://js.arcgis.com/3.9compact/"></script>
     <script>
         var map;
-
         require([
             "esri/map",
-            "esri/dijit/Basemap",
-            "esri/dijit/BasemapGallery",
-                "dijit/form/Button"
+            "esri/arcgis/utils",
+            "esri/dijit/Popup",
+            "esri/dijit/PopupMobile",
+            "dojo/dom-construct",
+            "esri/IdentityManager",
+            "dojo/domReady!"
         ], function(
                 Map,
-                Basemap,
-                BasemapGallery,
-                Button
+                arcgisUtils,
+                Popup,
+                PopupMobile,
+                domConstruct
                 ) {
+            var popup = new Popup(null, domConstruct.create("div"));
+            //arcgisUtils.createMap("1df512c380994cc5a3dad2e2d428eea3", "mapDiv",{
+            //8adce38ca6ac4641a5601d02edeb3315
+                arcgisUtils.createMap("b68cc036098c48b09c2129f9d2d93cb9", "mapDiv",{
+                mapOptions: {
+                    center: [38.59,-76.909],
+                    zoom: 10
+                },
 
-            map = new esri.Map("map", {
-                center: [-76.935756, 38.594137],
-                zoom: 11
+                           /* center: [38.59,-76.909],
+                            zoom: 10,
+                            infoWindow: popup
+                        },*/
+                geometryServiceURL: "http://tasks.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer"
             });
 
 
-            //Create Basemaps and Basemap Gallery
-            //MD iMap Imagery / SSA Charles County Mashup*/
-
-            var mdImaplayer = new esri.dijit.BasemapLayer({
-                //url:"https://prod1.spatialsys.com/arcgis/rest/services/CharlesStormWater/Basemap/MapServer"
-                url:"http://www.mdimap.us/ArcGIS/rest/services/ImageryBaseMapsEarthCover/MD.State.6InchImagery/MapServer"
-            });
-
-            var ssaCharlesOrtholayer = new esri.dijit.BasemapLayer({
-                //url:"https://prod1.spatialsys.com/arcgis/rest/services/CharlesStormWater/Basemap/MapServer"
-                url:"https://prod1.spatialsys.com/arcgis/rest/services/Charles/Orthos_2011/MapServer"
-            });
-
-            var mdImapbasemap = new esri.dijit.Basemap({
-                layers:[ssaCharlesOrtholayer, mdImaplayer],
-                title:"iMap Orthophoto",
-                thumbnailUrl: "assets/imap_basemap.png"
-            });
-
-
-            //Gazeteer
-            var charlesBasemapLayer = new esri.dijit.BasemapLayer({
-                //url:"https://prod1.spatialsys.com/arcgis/rest/services/CharlesStormWater/Basemap/MapServer"
-                url:"https://prod1.spatialsys.com/arcgis/rest/services/Charles/Gazetteer/MapServer"
-            });
-
-            var charlesBasemap = new esri.dijit.Basemap({
-                layers:[charlesBasemapLayer],
-                title:"Charles Gazeteer",
-                thumbnailUrl: "assets/imap_basemap.png"
-            });
-
-
-            var basemapGallery = new BasemapGallery({
-                showArcGISBasemaps: false,
-                map: this.map
-            });
-
-            basemapGallery.add(charlesBasemap);
-            basemapGallery.add(mdImapbasemap);
-
-            imagerybutton = new dijit.form.Button({
-                label: "Imagery",
-                onClick: function(){
-                    //Change to Imagery Basemap
-                    map.setBasemap(mdImapbasemap)
-                }
-            }, "imageryButtonNode");
-
-            gazbutton = new dijit.form.Button({
-                label: "Gazeteer",
-                onClick: function(){
-                    //Change to Imagery Basemap
-                    map.setBasemap(charlesBasemap)
-                }
-            }, "gazButtonNode");
         });
     </script>
 </head>
+
 <body>
-<div id="map">
-    <button id="imageryButtonNode" type="button"></button>
-    <button id="gazButtonNode" type="button"></button>
-</div>
+<div id="mapDiv"></div>
 </body>
 </html>

@@ -102,6 +102,116 @@
   margin-right: 5px;
 }
 
+/***** ****/
+.override .esriMobileInfoView {
+    position: absolute;
+    top: 93px;
+    width: 100%;
+    background: #fff;
+    display: none;
+    z-index: 42;
+    opacity: 1.0;
+    overflow: hidden;
+}
+.override .esriMobileNavigationBar {
+    overflow: hidden;
+    position: absolute;
+    z-index: 41;
+    top: 51px;
+    background-color: #DBDBDB;
+    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.25, rgb(187, 187, 187)), color-stop(0.82, rgb(224, 224, 224)) );
+    background-image: -moz-linear-gradient( center bottom, rgb(10,77,106) 25%, rgb(99,155,188) 82% );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#639BBC', endColorstr='#0A4D6A');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#639BBC', endColorstr='#0A4D6A')";
+    width: 100%;
+    height: 42px;
+    margin: 0 auto;
+    clear: both;
+    font-family: Helvetica,Arial,sans-serif;
+    display: block;
+}
+
+
+.override .esriPopupMobile .titlePane {
+    background-color: #DBDBDB;
+    color: #FFFFFF;
+    line-height: 25px;
+    padding-bottom: 6px;
+    border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -o-border-radius: 5px 5px 0px 0px;
+    cursor: default;
+    border: 1px solid #CCCCCC;
+    border-bottom: none;
+}
+.override .esriPopupMobile {
+    position: absolute;
+    z-index: 40;
+    box-shadow: 0 0 0.75em #111;
+    -moz-box-shadow: 0 0 0.75em #111;
+    -webkit-box-shadow: 0 0 0.75em #111;
+    -o-box-shadow: 0 0 0.75em #111;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.override .esriPopupMobile .pointer.bottom {
+    left: 50%;
+    bottom: -10px;
+    width: 24px;
+    height: 12px;
+    margin-left: 0px;
+    background: url("../images/pointerbottom.png") no-repeat;
+    background-image: url(../images/pointerbottom.png);
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+}
+
+.override .esriPopupMobile .pointer.top {
+    left: 118px;
+    top: -10px;
+    width: 24px;
+    height: 12px;
+    margin-left: 0px;
+    background: url("../images/pointertop.png") no-repeat;
+    background-image: url(../images/pointertop.png);
+}
+
+.override .esriPopupMobile .titlePane .title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 10pt;
+    font-weight: bold;
+    width: 174x;
+    line-height: 12px;
+    margin-top: 3px;
+}
+
+.esriPopupMobile .titlePane .spinner {
+    float: left;
+    margin-top: 4px;
+    margin-right: 4px;
+    cursor: pointer;
+    background: url("../images/spinner.gif") no-repeat;
+    width: 16px;
+    height: 16px;
+    background-position: 0px 0px;
+}
+
+
 /*** Restyle Geocoder widget ***/
 .simpleGeocoder .esriGeocoderContainer {
   width: 100%;
@@ -140,10 +250,39 @@
     border: 1px solid #cccccc;
     width: 32px;
     height: 32px;
-}
+    }
 
 .override .LocateButton:hover .zoomLocateButton:hover {
     background-color: rgb(235, 235, 235);
+}
+
+.override .HomeButton .home {
+    background-image: url("../images/home_locate.png");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    border-color: #cccccc;
+    border: 1px solid #cccccc;
+    width: 32px;
+    height: 32px;
+    background-color: #666;
+    background-color: rgba(255, 255, 255, 1);
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    cursor:pointer;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -o-border-radius:5px;
+    border-radius:5px;
+    background-repeat:no-repeat;
+}
+
+.override .HomeButton .home:hover {background-color: #333;
+    background-color: rgb(235, 235, 235);
+}
+.override .HomeButton .home:active {background-color: #ccc;
+    background-color: rgba(102,102,102,0.60);
 }
 
 .override .map .logo-med {
@@ -153,10 +292,23 @@
     height: 40px;
     z-index: 30;
     background-image: url("../images/CC_Logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     cursor: pointer;
     _background-image: none;
 }
-
+.override .map .logo-sm {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 31px;
+    height: 40px;
+    z-index: 30;
+    background-image: url("../images/CC_Logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    _background-image: none;
+}
 .override .dijitReset {
     margin: 0;
     border: 0;
@@ -429,6 +581,24 @@
     display:none;
 }
 
+.dijitDialogUnderlayWrapper {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 998;
+    display: none;
+    background: none repeat scroll 0% 0% black !important;
+    opacity:0.5;
+    filter:alpha(opacity=50);
+}
+
+.li-check {
+    height: 15px;
+    width: 20px;
+    padding-bottom: 1px;
+    padding-left: 2px;
+    padding-right: 5px;
+}
 /*** Button Gradient ****/
 /*.override .dijitButton {
 
